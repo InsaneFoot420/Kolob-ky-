@@ -1,0 +1,29 @@
+
+:root{--bg:#0b0c10;--fg:#e8e8e8;--muted:#9aa3af;--acc:#00e0a4;--card:#111318;--shadow:0 10px 25px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:inherit}
+.container{max-width:1080px;margin:0 auto;padding:24px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;letter-spacing:.4px}
+.badge{background:rgba(255,255,255,.06);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:32px 0}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+h2{font-size:26px;margin:0 0 10px}
+p{color:#d7dbe0;line-height:1.6}
+.kpi{display:flex;gap:14px;margin-top:14px}
+.kpi .pill{background:rgba(0,224,164,.12);color:#9ff3dd;border:1px solid rgba(0,224,164,.35);border-radius:999px;padding:8px 12px;font-size:12px}
+.btns{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.btn{appearance:none;border:none;cursor:pointer;border-radius:12px;padding:12px 16px;font-weight:700;letter-spacing:.2px}
+.btn-primary{background:var(--acc);color:#032620;box-shadow:0 10px 20px rgba(0,224,164,.25)}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.16);color:#e7eaee}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr);margin-top:26px}
+.item{padding:18px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
+.footer{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:40px;padding:20px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
+.contact a{color:var(--fg);text-decoration:none}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#cfe9ff}
+.embed{aspect-ratio:16/9;border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;background:#0a0b0e}
+@media(max-width:980px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){h1{font-size:32px}.grid{grid-template-columns:1fr}}
