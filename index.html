@@ -1,49 +1,179 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InsaneKolobezky | Servis & Tuning</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InsaneKolobezky â€” Servis, Tuning & PÅ™estavby</title>
+  <meta name="description" content="Specialista na elektrokolobÄ›Å¾ky a elektrovozÃ­tka. Servis, tuning, pÅ™estavby a Ãºpravy na mÃ­ru v MilovicÃ­ch.">
+  <link rel="preload" as="image" href="assets/hero-noise.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="InsaneKolobezky Logo">
-      <h1>InsaneKolobezky</h1>
-    </div>
-    <nav>
-      <a href="#sluzby">Slu0—6by</a>
-      <a href="#kontakt">Kontakt</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="InsaneKolobezky - domÅ¯">
+      <img src="assets/logo.svg" alt="InsaneKolobezky Logo" width="38" height="38">
+      <span>InsaneKolobezky</span>
+    </a>
+    <nav class="nav">
+      <a href="#sluzby">SluÅ¾by</a>
+      <a href="#tuning">Tuning</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt" class="btn small">Kontakt</a>
     </nav>
+    <button class="burger" aria-label="OtevÅ™Ã­t menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <section class="hero">
-    <h2>”9æ9 Specialista na elektrokolob¨§0—6ky a elektrovoz¨ªtka</h2>
-    <p>Servis, tuning, p0”0estavby a individu¨¢ln¨ª ¨²pravy</p>
-  </section>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="hero-bg">
+        <img src="assets/hero-noise.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="container grid-2">
+        <div class="stack" data-anim="fade-up">
+          <h1>ğŸ”§ Specialista na elektrokolobÄ›Å¾ky a elektrovozÃ­tka</h1>
+          <p class="lead">
+            Servis, tuning, pÅ™estavby a <b>vychytÃ¡vky na mÃ­ru</b>. Rychle, poctivÄ› a s citem pro detail.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#kontakt">Domluv si servis</a>
+            <a class="btn ghost" href="#sluzby">ProhlÃ©dnout sluÅ¾by</a>
+          </div>
+          <ul class="badges">
+            <li>Milovice â€¢ TyrÅ¡ova 650</li>
+            <li>Praxe s vÃ½konnÃ½mi dualâ€‘motor stroji</li>
+            <li>Diagnostika â€¢ Upgrade â€¢ BezpeÄnost</li>
+          </ul>
+        </div>
+        <div class="hero-card" data-anim="float-in">
+          <div class="card glass">
+            <h3>RychlÃ¡ diagnÃ³za</h3>
+            <p>Å umÃ­ Å™Ã­dÃ­cÃ­ jednotka? ZlobÃ­ BMS? PÅ™esnÄ› zjistÃ­m, kde je problÃ©m â€” bez zbyteÄnÃ½ch vÃ½mÄ›n.</p>
+            <div class="divider"></div>
+            <h3>BezpeÄnÃ½ tuning</h3>
+            <p>VÃ½kon s rozumem: chlazenÃ­, kabelÃ¡Å¾, pojistky, firmware. Ne jen â€œvÃ­c ampÃ©rÅ¯â€.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-angle"></div>
+    </section>
 
-  <section id="sluzby" class="services">
-    <h2>Co nab¨ªz¨ªm</h2>
-    <ul>
-      <li>•0•0„1‚5 Opravy a ¨²dr0—6ba elektrokolob¨§0—6ek</li>
-      <li>7²3 Tuning v0‹5konu i vzhledu</li>
-      <li>”9á5 Vychyt¨¢vky na m¨ªru</li>
-      <li>”9ä2 P0”0estavby klasick0‹5ch kolob¨§0—6ek na elektrick¨¦</li>
-      <li>•0‹4 Stavba elektrovoz¨ªtek na zak¨¢zku</li>
-    </ul>
-    <p class="extra">”9ó5„1‚5 Tak¨¦ individu¨¢ln¨ª lekce pr¨¢ce s PC, od z¨¢klad0–1 a0—6 po t¨§0—6bu kryptom¨§n.</p>
-  </section>
+    <!-- SluÅ¾by -->
+    <section id="sluzby" class="section">
+      <div class="container">
+        <h2 class="section-title" data-anim="fade-up">Co dÄ›lÃ¡m nejÄastÄ›ji</h2>
+        <div class="cards">
+          <article class="service card" data-anim="rise">
+            <h3>ğŸ› ï¸ Opravy & ÃšdrÅ¾ba</h3>
+            <p>Brzdy, loÅ¾iska, Å™Ã­zenÃ­, motory, kabelÃ¡Å¾, BMS. Od drobnostÃ­ po generÃ¡lky.</p>
+            <ul class="bullets">
+              <li>Diagnostika zÃ¡vad</li>
+              <li>ServisnÃ­ prohlÃ­dky</li>
+              <li>VÃ½mena komponent</li>
+            </ul>
+          </article>
+          <article class="service card" data-anim="rise" data-delay="100">
+            <h3>âš¡ Tuning vÃ½konu</h3>
+            <p>Upgrade Å™Ã­dÃ­cÃ­ch jednotek, proudovÃ½ch limitÅ¯ a chlazenÃ­ pro stabilnÃ­ vÃ½kon.</p>
+            <ul class="bullets">
+              <li>DvojitÃ½ motor / vyÅ¡Å¡Ã­ napÄ›tÃ­*</li>
+              <li>Optimalizace kabelÃ¡Å¾e</li>
+              <li>Firmware / softâ€‘tuning</li>
+            </ul>
+          </article>
+          <article class="service card" data-anim="rise" data-delay="200">
+            <h3>ğŸ“± VychytÃ¡vky na mÃ­ru</h3>
+            <p>DÃ¡lkovÃ© profily vÃ½konu, LED podsvit, alarm, nabÃ­jeÄka, trackerâ€¦ na pÅ™Ã¡nÃ­.</p>
+            <ul class="bullets">
+              <li>BezpeÄnostnÃ­ prvky</li>
+              <li>LED a design</li>
+              <li>NabÃ­jenÃ­ & drÅ¾Ã¡ky</li>
+            </ul>
+          </article>
+          <article class="service card" data-anim="rise" data-delay="300">
+            <h3>ğŸ”Œ PÅ™estavby</h3>
+            <p>Z klasiky udÄ›lÃ¡m elektro. Nejen kolobÄ›Å¾ky â€” <em>prakticky cokoliv</em>.</p>
+            <ul class="bullets">
+              <li>NÃ¡vrh elektriky</li>
+              <li>Baterie & BMS</li>
+              <li>Homologace â€” konzultace</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">* VÅ¾dy s ohledem na bezpeÄnost, chlazenÃ­ a Å¾ivotnost dÃ­lÅ¯.</p>
+      </div>
+    </section>
 
-  <section id="kontakt" class="contact">
-    <h2>Kontakt</h2>
-    <p>”9İ9 Tyr0”8ova 650, Milovice, PS0Œ9 289 24</p>
-    <p>”9ß6 Tel: <a href="tel:+420731253101">731 253 101</a></p>
-    <p>”9à5 Email: <a href="mailto:insanebad2@gmail.com">insanebad2@gmail.com</a></p>
-  </section>
+    <!-- Tuning highlight -->
+    <section id="tuning" class="section split">
+      <div class="container grid-2">
+        <div class="stack" data-anim="fade-up">
+          <h2>EnergickÃ½ tuning bez kompromisÅ¯</h2>
+          <p class="lead">VyladÃ­m vÃ½kon i vzhled. Kde to dÃ¡vÃ¡ smysl, pÅ™idÃ¡m druhÃ½ motor, posÃ­lÃ­m kabelÃ¡Å¾ a chladicÃ­ plochy, doladÃ­m brzdy a geometrii.</p>
+          <ul class="checks">
+            <li>Smart profily vÃ½konu (eco / city / sport)</li>
+            <li>Neon/LED sety a designovÃ© prvky</li>
+            <li>Upgrade baterie, pojistek, konektorÅ¯</li>
+          </ul>
+          <a class="btn primary" href="#kontakt">Chci nezÃ¡vaznou konzultaci</a>
+        </div>
+        <div class="stack media" data-anim="float-in">
+          <div class="poster">
+            <div class="glow"></div>
+            <img src="assets/feature-illustration.svg" alt="StylizovanÃ¡ ilustrace elektrokolobÄ›Å¾ky">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>0„8 2025 InsaneKolobezky | V0”8echna pr¨¢va vyhrazena</p>
+    <!-- Galerie -->
+    <section id="galerie" class="section">
+      <div class="container">
+        <h2 class="section-title" data-anim="fade-up">PÅ™ed &rarr; Po</h2>
+        <div class="gallery">
+          <figure class="shot" data-anim="zoom-in"><img src="assets/sample1.svg" alt="UkÃ¡zka 1"><figcaption>PÅ™ehled kabelÃ¡Å¾e + LED</figcaption></figure>
+          <figure class="shot" data-anim="zoom-in" data-delay="100"><img src="assets/sample2.svg" alt="UkÃ¡zka 2"><figcaption>Upgrade brzd a chlazenÃ­</figcaption></figure>
+          <figure class="shot" data-anim="zoom-in" data-delay="200"><img src="assets/sample3.svg" alt="UkÃ¡zka 3"><figcaption>DruhÃ½ motor & napÄ›tÃ­</figcaption></figure>
+        </div>
+        <p class="note">Tip: nahraj vlastnÃ­ fotky do sloÅ¾ky <code>assets/</code> a pÅ™epiÅ¡ cesty.</p>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section contact">
+      <div class="container grid-2">
+        <div class="stack" data-anim="fade-up">
+          <h2>Kontakt</h2>
+          <p><b>InsaneKolobezky</b><br> TyrÅ¡ova 650, 289 24 Milovice</p>
+          <p>ğŸ“ <a href="tel:+420731253101">731 253 101</a><br>
+             ğŸ“§ <a href="mailto:insanebad2@gmail.com">insanebad2@gmail.com</a></p>
+          <div class="contact-card">
+            <p class="dim">NapiÅ¡ pÃ¡r vÄ›t o problÃ©mu a jÃ¡ se ozvu zpÄ›t.</p>
+            <form id="contactForm">
+              <div class="row"><input type="text" name="name" placeholder="TvÃ© jmÃ©no" required></div>
+              <div class="row"><input type="tel" name="phone" placeholder="Telefon" required></div>
+              <div class="row"><textarea name="msg" placeholder="PopiÅ¡ kolobÄ›Å¾ku a zÃ¡vadu" rows="4" required></textarea></div>
+              <button type="submit" class="btn primary full">Odeslat</button>
+              <p id="formNote" class="form-note" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+        <div class="stack map" data-anim="rise">
+          <iframe title="Mapa - Milovice TyrÅ¡ova 650" loading="lazy"
+            src="https://www.google.com/maps?q=Tyr%C5%A1ova%20650%2C%20Milovice&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Â© 2025 InsaneKolobezky â€¢ Servis, tuning & pÅ™estavby â€¢ Milovice</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
